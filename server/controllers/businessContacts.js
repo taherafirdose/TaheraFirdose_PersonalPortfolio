@@ -19,7 +19,7 @@ module.exports.displayBusinessList = (req, res, next) => {
             //console.log(Business contact List);
 
             res.render('businessContacts/list', 
-            {title: 'Business Contact', 
+            {title: 'Business Contacts', 
             BusinessList: businessList, 
             displayName: req.user ? req.user.displayName : ''});      
         }
