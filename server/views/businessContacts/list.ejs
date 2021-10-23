@@ -6,12 +6,6 @@
 
 <%- include ../partials/header.ejs %>
 
-<!-- <style>
-    body {
-      background-image: url('images/homebg.jpg');
-      background-size: cover;
-    }
-  </style> -->
 
 
   <!-- Main Content -->
@@ -51,11 +45,11 @@
                             <td class="text-center col-2"><%= BusinessList[count].contact_number %></td>
                             <td class="text-center col-8"><%= BusinessList[count].email_address %></td>                                   
                             <td class="text-center col-2">
-                                <a href="/businesscontact-list/edit/<%= BusinessList[count]._id %>" class="btn1 btn-primary btn-sm">
+                                <a href="/businesscontact-list/edit/<%= BusinessList[count]._id %>" class="btn btn-primary btn-sm">
                                 <i class="fas fa-pencil-alt"></i> Edit</a>
                             </td>
                             <td class="text-center col-2">
-                                <a href="/businesscontact-list/delete/<%= BusinessList[count]._id %>" class="btn1 btn-danger btn-sm">
+                                <a href="/businesscontact-list/delete/<%= BusinessList[count]._id %>" class="btn btn-danger btn-sm">
                                 <i class="fas fa-trash-alt"></i> Delete</a>
                             </td>
                          <% } else { %>
